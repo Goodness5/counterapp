@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -17,5 +18,30 @@ class App extends Component {
     );
   }
 }
+=======
+import React from 'react';
+// import logo from './logo.svg';
+import { useState } from "react";
+import './App.css';
+
+const App= () => {
+    const [count, setCount]= useState(0);
+    const handleIncrement= () =>{
+      if (count>=20) {
+        alert("stop")
+        return;
+      }
+      setCount(count => count +1)
+    }
+    return (
+      <div className="App">
+      
+      <div>counter :{count}</div>
+
+      <button onClick={handleIncrement}>Increment</button>
+      </div>
+    );
+  }
+>>>>>>> f5db3c0be289df28d1c78d85311e56c1c31dac69
 
 export default App;

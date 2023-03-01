@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import { ClipLoader } from "react-spinners";
 import axios from "axios";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 function App() {
   const [count, setCount] = useState(0);
